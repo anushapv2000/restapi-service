@@ -8,5 +8,5 @@ WORKDIR /root/project
 RUN git clone https://github.com/anushapv2000/restapi-service.git
 WORKDIR /root/project/restapi-service
 
-CMD ["uvicorn","restapi:app","--host","0.0.0.0","--port","80"]
+CMD ["uvicorn","restapi:app","--host","0.0.0.0","--port","8080"]
 
