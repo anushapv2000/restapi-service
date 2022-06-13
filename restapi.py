@@ -15,12 +15,12 @@ async def addnumber(new):
       if '.' not in new:
           if new.isdigit():
             numbers.append(int(new))
-            return {"response":numbers}
+            return {"result":"OK"}
           else:
-            return {"reponse":"Result Error"}
+            return {"result":" Error"}
       else:
             print(type(new))
-            return {"reponse":"Given number is not an integer"}
+            return {"result":"Given number is not an integer"}
 
 @app.get("/return")
 async def showvalues():
@@ -35,18 +35,18 @@ async def average():
             s = s+i
             c=c+1
         avg = s/c
-        return {"reponse:":avg}
+        return {"result:":avg}
     else:
-        return{"response":"no numbers in the array"}
+        return{"result":"no numbers in the array"}
 @app.get("/numbers/sum")
 async def sum():
     s=0
     if numbers!=[]:
         for i in numbers:
             s=s+i
-        return {"reponse:":s}
+        return {"result:":s}
     else:
-        return {"response:":"no numbers in the array"}
+        return {"result:":"no numbers in the array"}
 @app.get("/numbers/stddev")
 async def std():
     s=0
@@ -61,9 +61,9 @@ async def std():
         for i in numbers:
             sd_s=avg-i
             st = st + (sd_s*sd_s)
-        return {"reponse:":st}
+        return {"result:":st}
     else:
-        return {"response:":"no numbers in the array"}
+        return {"result:":"no numbers in the array"}
 def getnumbers():
     if numbers!=[]:
       return numbers
