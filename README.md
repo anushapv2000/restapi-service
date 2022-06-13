@@ -14,7 +14,7 @@ On the terminal
  1. Build the image
  >````sudo docker build --file dockerfile -t restapi_img .````
  2. Run the container
- >````docker run -d --name restapi_container -p 8000:80 restapi_img````
+ >````docker run -d --name restapi_container -p 8080:8080 restapi_img````
  3. Check the container status using
  >````docker ps -a````
  4. Once the container start running ,send the request using curl command
