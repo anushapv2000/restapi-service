@@ -17,7 +17,7 @@ On the terminal
  >````docker run -d --name restapi_container -p 8000:80 restapi_img````
  3. Check the container status using
  >````docker ps -a````
- 4.Once the container start running ,send the request using curl command
+ 4. Once the container start running ,send the request using curl command
  >````curl -X POST http://localhost:8000/numbers?new=3````
  
  Response will be shown in the terminal
