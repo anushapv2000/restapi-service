@@ -10,4 +10,9 @@ On the terminal
 
  Navigate to the directory restapi-service</br>
  
+ Run the following Command
+ 1. Build the image
+ >````sudo docker build --file dockerfile -t restapi_img .````
+ 2.
+ 
  
